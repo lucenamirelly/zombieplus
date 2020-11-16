@@ -16,7 +16,12 @@ pipeline{
         stage ('Tests'){
             steps {
                 sh "npm run test:ci"
-                junit testResults: "testes_output/**/*.xml"
+                
+            }
+            post {
+                always {
+                    junit testResults: "testes_output/**/*.xml"
+                }
             }
             
         }
