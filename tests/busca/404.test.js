@@ -25,7 +25,7 @@ module.exports = {
         let movie=browser.page.movie()
         movie
             .waitForElementVisible ('@alertDanger', 10000)
-            .assert.containsText('@alertDanger', 'Puxa! não encontramos nada aqui :(')
+            .assert.containsText('@alertDanger', 'Puxa! não encontramos nada aqui.')
 
     }
 }
