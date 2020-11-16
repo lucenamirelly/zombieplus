@@ -16,7 +16,12 @@ module.exports = {
     port: 9515,
 
   },
-
+  screenshots:{
+    enabled:true,
+    on_failure: true,
+    on_error: true,
+    path: 'tests_output/'
+  },
 
   test_settings: {
     default:{
